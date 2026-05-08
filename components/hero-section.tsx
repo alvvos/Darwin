@@ -13,13 +13,18 @@ import type { T } from '@/lib/content'
  * El observador percibe profundidad porque ambas capas se desplazan a distintas
  * velocidades respecto al viewport: diferencia de ~62 % de h por scroll completo.
  *
- * Cálculo: offset = -rect.top × SPEED
- *   • rect.top = 0  → sección recién visible, sin offset
- *   • rect.top < 0  → scroll activo, imagen se rezaga hacia abajo
- * La imagen tiene top/bottom: -38 % para que nunca aparezcan huecos.
+ * Cálculo: offset = -rect.top × SPEED + INITIAL_Y
+ *   • El contenedor (-38 % arriba, -38 % abajo) tiene 176 vh de alto.
+ *   • Con object-cover la imagen llena la altura exacta del contenedor, lo que
+ *     sitúa la cara de Darwin (~15 % del alto de imagen) a -105 px del viewport
+ *     cuando rect.top = 0. INITIAL_Y compensa ese desplazamiento para que la
+ *     cara sea visible desde el primer fotograma sin crear huecos en los bordes
+ *     (el cálculo demuestra que image_top permanece siempre por encima del
+ *     viewport durante todo el recorrido de scroll).
  */
 
-const SPEED = 0.38
+const SPEED     = 0.38
+const INITIAL_Y = 40  // px; mueve la imagen hacia abajo para mostrar la cara
 
 export function HeroSection({ content }: { content: T['home']['hero'] }) {
   const sectionRef = useRef<HTMLElement>(null)
@@ -35,7 +40,7 @@ export function HeroSection({ content }: { content: T['home']['hero'] }) {
       // Fuera del viewport: no calcular
       if (rect.bottom < 0 || rect.top > window.innerHeight) return
 
-      img.style.transform = `translateY(${-rect.top * SPEED}px)`
+      img.style.transform = `translateY(${-rect.top * SPEED + INITIAL_Y}px)`
     }
 
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -61,11 +66,11 @@ export function HeroSection({ content }: { content: T['home']['hero'] }) {
       <div
         ref={imgRef}
         aria-hidden
-        className="absolute inset-x-0 will-change-transform pointer-events-none select-none"
+        className="absolute inset-x-0 will-change-transform"
         style={{ top: '-38%', bottom: '-38%' }}
       >
         <img
-          src="/55.jpg"
+          src="/9.jpg"
           alt=""
           className="w-full h-full object-cover opacity-95 dark:opacity-45"
           style={{ objectPosition: '0% 35%' }}

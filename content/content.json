@@ -4,7 +4,7 @@
   "translations": {
     "es": {
       "nav": {
-        "brand": "Darwin in digital.",
+        "brand": "Darwin in Digital.",
         "metodologia": "Metodología",
         "soluciones": "Soluciones",
         "quien_soy": "Quién soy",
@@ -21,7 +21,7 @@
         "link_agendar": "Agendar café",
         "link_linkedin": "Linkedin",
         "link_email": "Email",
-        "copyright": "© 2026 darwin in digital. Todos los derechos reservados.",
+        "copyright": "© 2026 Darwin in Digital. Todos los derechos reservados.",
         "aviso_legal": "Aviso legal",
         "privacidad": "Política de privacidad",
         "cookies": "Política de cookies"
@@ -83,7 +83,7 @@
         "h1_main": "M.a.e.c.: un sistema operativo para la",
         "h1_accent": "evolución humana.",
         "intro": "Para que el cambio sea seguro y duradero, aplicamos la metodología de alineación y evolución conjunta. Es nuestra hoja de ruta para que la transformación no sea un trauma, sino un proceso natural.",
-        "pillars_heading": "Los 6 pilares de Darwinin",
+        "pillars_heading": "Los 6 pilares de Darwin",
         "p1_num": "01",
         "p1_title": "Sinergia y compromiso",
         "p1_body": "No somos externos; somos parte de tu equipo hasta que el objetivo se cumple.",
@@ -126,7 +126,7 @@
     },
     "en": {
       "nav": {
-        "brand": "Darwin in digital.",
+        "brand": "Darwin in Digital.",
         "metodologia": "Methodology",
         "soluciones": "Solutions",
         "quien_soy": "About",
@@ -143,7 +143,7 @@
         "link_agendar": "Book a coffee",
         "link_linkedin": "Linkedin",
         "link_email": "Email",
-        "copyright": "© 2026 darwin in digital. All rights reserved.",
+        "copyright": "© 2026 Darwin in Digital. All rights reserved.",
         "aviso_legal": "Legal notice",
         "privacidad": "Privacy policy",
         "cookies": "Cookie policy"
