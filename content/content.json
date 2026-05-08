@@ -1,0 +1,250 @@
+{
+  "_instrucciones": "Cambia 'locale' a 'en' para inglés o 'es' para español. Cada sección corresponde a una página. Los revisores solo tocan los valores de texto, nunca las claves.",
+  "locale": "es",
+  "translations": {
+    "es": {
+      "nav": {
+        "brand": "Darwin in digital.",
+        "metodologia": "Metodología",
+        "soluciones": "Soluciones",
+        "quien_soy": "Quién soy",
+        "hablemos": "Hablemos"
+      },
+      "footer": {
+        "tagline": "Humanizamos la tecnología y capacitamos a los equipos para adoptar un rol evolutivo ante los avances digitales.",
+        "explorar": "Explorar",
+        "conectar": "Conectar",
+        "nav_inicio": "Inicio",
+        "nav_metodologia": "Metodología",
+        "nav_soluciones": "Soluciones",
+        "nav_quien_soy": "Quién soy",
+        "link_agendar": "Agendar café",
+        "link_linkedin": "Linkedin",
+        "link_email": "Email",
+        "copyright": "© 2026 darwin in digital. Todos los derechos reservados.",
+        "aviso_legal": "Aviso legal",
+        "privacidad": "Política de privacidad",
+        "cookies": "Política de cookies"
+      },
+      "home": {
+        "hero": {
+          "label": "Adaptación y disrupción tecnológica",
+          "h1_line1": "El futuro no es",
+          "h1_line2": "la tecnología.",
+          "h1_line3": "El futuro eres tú",
+          "h1_line4": "(y tu equipo).",
+          "p1": "El darwinismo digital es implacable: la tecnología evoluciona más rápido que nuestra capacidad de adaptación. Pero aquí no venimos a hablar de software, sino de supervivencia y relevancia humana.",
+          "p2": "En Darwinin Digital, no instalamos programas; instalamos mentalidades. Somos facilitadores que ayudamos a las organizaciones a cruzar el puente entre la «inercia activa» y la agilidad real.",
+          "cta_primary": "Agendar café de 15 min",
+          "cta_secondary": "Descubrir metodología m.a.e.c."
+        },
+        "pillars": {
+          "p1_title": "Abandona el océano rojo",
+          "p1_body": "Deja de desangrarte compitiendo por precio. Te ayudamos a descubrir esa propuesta única que te traslada a un océano azul donde la competencia es irrelevante porque nadie puede replicar tu esencia humana.",
+          "p2_title": "Tecnología con alma",
+          "p2_body": "Las máquinas están para lo mecánico. Nosotros liberamos a tu equipo para que use lo que ninguna IA tiene: empatía, imaginación y sentido común."
+        },
+        "metamorphosis": {
+          "heading": "¿En qué etapa de la metamorfosis estás?",
+          "phase1_label": "Fase 01",
+          "phase1_title": "La oruga",
+          "phase1_body": "El peso de la rutina te impide moverte.",
+          "phase2_label": "Fase 02",
+          "phase2_title": "La crisálida",
+          "phase2_body": "Sientes la fricción del cambio, pero aún no sabes cómo romper el capullo.",
+          "phase3_label": "Fase 03",
+          "phase3_title": "La mariposa",
+          "phase3_body": "Cooperación fluida, agilidad y una visión clara del valor futuro."
+        }
+      },
+      "quien_soy": {
+        "label": "Quién soy",
+        "h1": "Jorge Inda: Rompiendo la inercia para liberar el talento.",
+        "quote": "«El cambio comienza cuando nos permitimos pensar si lo que hago es lo mejor que puedo hacer.»",
+        "p1": "Con más de 23 años conectando negocios y comportamiento humano, he aprendido que el éxito no reside en el presupuesto tecnológico, sino en la aceptación cultural.",
+        "p2": "Habiendo liderado equipos de más de 450 personas (como en Havas), conozco el peso de la complejidad.",
+        "p3": "Mi propósito es simple: ayudarte a que la próxima década no te suceda, sino que ocurra gracias a ti."
+      },
+      "servicios": {
+        "label": "Nuestras soluciones",
+        "h1": "Diseñamos el puente hacia tu próximo nivel.",
+        "intro": "Olvídate de las siglas complejas. Nosotros hablamos de resultados tangibles que tu equipo y tus clientes puedan sentir.",
+        "s1_title": "Identidad y estrategia de negocio",
+        "s1_body": "Miramos desde tu «yo del futuro» para decidir qué pasos dar hoy. Eliminamos los procesos «vampiro» que consumen energía sin aportar valor.",
+        "s2_title": "Experiencias útiles (factor wow)",
+        "s2_body": "Unimos el mundo físico y el digital. Si un cliente tiene que pensar demasiado, hemos fallado. Diseñamos para la alegría y la fluidez.",
+        "s3_title": "Conexión y diálogo",
+        "s3_body": "No buscamos clics, buscamos defensores. Ayudamos a que tu marca sea algo que la gente quiera recomendar.",
+        "s4_title": "Acompañamiento de equipo",
+        "s4_body": "Formamos con paciencia. Convertimos el miedo a lo desconocido en la seguridad de tener un aliado digital en el bolsillo."
+      },
+      "metodologia": {
+        "label": "Nuestra hoja de ruta",
+        "h1_main": "M.a.e.c.: un sistema operativo para la",
+        "h1_accent": "evolución humana.",
+        "intro": "Para que el cambio sea seguro y duradero, aplicamos la metodología de alineación y evolución conjunta. Es nuestra hoja de ruta para que la transformación no sea un trauma, sino un proceso natural.",
+        "pillars_heading": "Los 6 pilares de Darwinin",
+        "p1_num": "01",
+        "p1_title": "Sinergia y compromiso",
+        "p1_body": "No somos externos; somos parte de tu equipo hasta que el objetivo se cumple.",
+        "p2_num": "02",
+        "p2_title": "Empatía cultural",
+        "p2_body": "Protegemos tu esencia. «La supervivencia del más auténtico» significa que la tecnología debe hablar tu idioma, no al revés.",
+        "p3_num": "03",
+        "p3_title": "Estrategia desde las personas",
+        "p3_body": "Usamos los datos para entender sentimientos, no solo números.",
+        "p4_num": "04",
+        "p4_title": "Activación ágil",
+        "p4_body": "Siguiendo a Paul Graham, «hacemos cosas que no escalen» al principio para aprender rápido y fallar barato.",
+        "p5_num": "05",
+        "p5_title": "Inteligencia evolutiva",
+        "p5_body": "Menos «Big Data» y más «Big Common Sense». Decisiones prácticas para problemas reales.",
+        "p6_num": "06",
+        "p6_title": "Cimientos tecnológicos",
+        "p6_body": "Elegimos herramientas que enamoren a tu trabajador porque le hacen la vida más fácil.",
+        "cta_heading": "¿Aplicamos este sistema operativo en tu empresa?",
+        "cta_body": "Da el primer paso para liberar el talento de tu equipo sin compromisos.",
+        "cta_button": "Agendar 15 minutos"
+      },
+      "hablemos": {
+        "back": "Volver al inicio",
+        "label": "El primer paso",
+        "h1": "Menos formularios, más conversaciones.",
+        "p1": "En un mundo de bots y cuestionarios fríos, nosotros elegimos la calidez del encuentro. Siguiendo el principio de Seth Godin, creemos que el marketing es un acto de generosidad. Por eso, nuestro primer paso no es venderte, es servirte.",
+        "card_title": "¿Te apetece un café de 15 minutos?",
+        "card_body": "Sin presentaciones de ventas, sin compromisos. Solo 15 minutos de atención plena para escuchar tus frustraciones diarias.",
+        "bullet1_strong": "Nuestro objetivo:",
+        "bullet1_text": "entender tu realidad sin juzgar.",
+        "bullet2_strong": "Tu beneficio:",
+        "bullet2_text": "al terminar, tendrás al menos dos consejos prácticos e inmediatos para aplicar en tu negocio hoy mismo.",
+        "quote": "«La mejor tecnología del mundo no puede reemplazar una conversación honesta sobre lo que realmente está fallando.»",
+        "contact_label": "Escríbenos directamente",
+        "gmail_label": "Gmail",
+        "phone_label": "Teléfono",
+        "response_note": "Respondemos en menos de 24 horas. Sin filtros, sin asistentes. Directamente Jorge."
+      }
+    },
+    "en": {
+      "nav": {
+        "brand": "Darwin in digital.",
+        "metodologia": "Methodology",
+        "soluciones": "Solutions",
+        "quien_soy": "About",
+        "hablemos": "Let's talk"
+      },
+      "footer": {
+        "tagline": "We humanize technology and empower teams to take an evolutionary role in the face of digital advances.",
+        "explorar": "Explore",
+        "conectar": "Connect",
+        "nav_inicio": "Home",
+        "nav_metodologia": "Methodology",
+        "nav_soluciones": "Solutions",
+        "nav_quien_soy": "About",
+        "link_agendar": "Book a coffee",
+        "link_linkedin": "Linkedin",
+        "link_email": "Email",
+        "copyright": "© 2026 darwin in digital. All rights reserved.",
+        "aviso_legal": "Legal notice",
+        "privacidad": "Privacy policy",
+        "cookies": "Cookie policy"
+      },
+      "home": {
+        "hero": {
+          "label": "Adaptation and technological disruption",
+          "h1_line1": "The future isn't",
+          "h1_line2": "technology.",
+          "h1_line3": "The future is you",
+          "h1_line4": "(and your team).",
+          "p1": "Digital Darwinism is relentless: technology evolves faster than our capacity to adapt. But we're not here to talk about software — we're here to talk about survival and human relevance.",
+          "p2": "At Darwinin Digital, we don't install programs; we install mindsets. We're facilitators who help organizations cross the bridge between 'active inertia' and real agility.",
+          "cta_primary": "Book a 15-min coffee",
+          "cta_secondary": "Discover the m.a.e.c. methodology"
+        },
+        "pillars": {
+          "p1_title": "Leave the red ocean",
+          "p1_body": "Stop bleeding out competing on price. We help you discover that unique proposition that moves you to a blue ocean where competition is irrelevant because no one can replicate your human essence.",
+          "p2_title": "Technology with soul",
+          "p2_body": "Machines are for the mechanical. We free your team to use what no AI has: empathy, imagination, and common sense."
+        },
+        "metamorphosis": {
+          "heading": "What stage of the metamorphosis are you in?",
+          "phase1_label": "Phase 01",
+          "phase1_title": "The caterpillar",
+          "phase1_body": "The weight of routine keeps you from moving.",
+          "phase2_label": "Phase 02",
+          "phase2_title": "The chrysalis",
+          "phase2_body": "You feel the friction of change, but don't yet know how to break free.",
+          "phase3_label": "Phase 03",
+          "phase3_title": "The butterfly",
+          "phase3_body": "Fluid cooperation, agility, and a clear vision of future value."
+        }
+      },
+      "quien_soy": {
+        "label": "About",
+        "h1": "Jorge Inda: Breaking inertia to unleash talent.",
+        "quote": "«Change begins when we allow ourselves to question whether what I'm doing is the best I can do.»",
+        "p1": "With over 23 years connecting business and human behavior, I've learned that success doesn't lie in the technology budget, but in cultural acceptance.",
+        "p2": "Having led teams of over 450 people (as at Havas), I know the weight of complexity.",
+        "p3": "My purpose is simple: to help you ensure the next decade doesn't just happen to you, but happens because of you."
+      },
+      "servicios": {
+        "label": "Our solutions",
+        "h1": "We design the bridge to your next level.",
+        "intro": "Forget complex acronyms. We talk about tangible results that your team and clients can feel.",
+        "s1_title": "Identity and business strategy",
+        "s1_body": "We look from your 'future self' to decide what steps to take today. We eliminate the 'vampire' processes that consume energy without adding value.",
+        "s2_title": "Useful experiences (wow factor)",
+        "s2_body": "We unite the physical and digital worlds. If a customer has to think too much, we've failed. We design for joy and fluidity.",
+        "s3_title": "Connection and dialogue",
+        "s3_body": "We don't seek clicks, we seek advocates. We help your brand become something people want to recommend.",
+        "s4_title": "Team accompaniment",
+        "s4_body": "We train with patience. We transform fear of the unknown into the confidence of having a digital ally in your pocket."
+      },
+      "metodologia": {
+        "label": "Our roadmap",
+        "h1_main": "M.a.e.c.: an operating system for",
+        "h1_accent": "human evolution.",
+        "intro": "For change to be safe and lasting, we apply the Methodology of Alignment and Joint Evolution. It's our roadmap so that transformation is not a trauma, but a natural process.",
+        "pillars_heading": "The 6 pillars of Darwinin",
+        "p1_num": "01",
+        "p1_title": "Synergy and commitment",
+        "p1_body": "We are not external; we are part of your team until the goal is achieved.",
+        "p2_num": "02",
+        "p2_title": "Cultural empathy",
+        "p2_body": "We protect your essence. 'The survival of the most authentic' means technology must speak your language, not the other way around.",
+        "p3_num": "03",
+        "p3_title": "Strategy from people",
+        "p3_body": "We use data to understand feelings, not just numbers.",
+        "p4_num": "04",
+        "p4_title": "Agile activation",
+        "p4_body": "Following Paul Graham, we 'do things that don't scale' at first to learn fast and fail cheap.",
+        "p5_num": "05",
+        "p5_title": "Evolutionary intelligence",
+        "p5_body": "Less 'Big Data' and more 'Big Common Sense'. Practical decisions for real problems.",
+        "p6_num": "06",
+        "p6_title": "Technological foundations",
+        "p6_body": "We choose tools that your workers will love because they make their lives easier.",
+        "cta_heading": "Shall we apply this operating system to your company?",
+        "cta_body": "Take the first step to unleash your team's talent with no commitments.",
+        "cta_button": "Book 15 minutes"
+      },
+      "hablemos": {
+        "back": "Back to home",
+        "label": "The first step",
+        "h1": "Less forms, more conversations.",
+        "p1": "In a world of bots and cold questionnaires, we choose the warmth of real connection. Following Seth Godin's principle, we believe marketing is an act of generosity. So our first step isn't to sell you — it's to serve you.",
+        "card_title": "How about a 15-minute coffee?",
+        "card_body": "No sales pitches, no commitments. Just 15 minutes of full attention to listen to your daily frustrations.",
+        "bullet1_strong": "Our goal:",
+        "bullet1_text": "to understand your reality without judgment.",
+        "bullet2_strong": "Your benefit:",
+        "bullet2_text": "by the end, you'll have at least two practical and immediate tips to apply to your business today.",
+        "quote": "«The best technology in the world cannot replace an honest conversation about what's really not working.»",
+        "contact_label": "Write to us directly",
+        "gmail_label": "Gmail",
+        "phone_label": "Phone",
+        "response_note": "We respond within 24 hours. No filters, no assistants. Directly Jorge."
+      }
+    }
+  }
+}
