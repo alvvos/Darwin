@@ -48,7 +48,7 @@ export default async function Footer() {
               <a href="#" className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">
                 {f.link_linkedin}
               </a>
-              <a href="mailto:hola@darwinindigital.com" className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">
+              <a href="mailto:miguel@darwinindigital.com" className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">
                 {f.link_email}
               </a>
             </nav>

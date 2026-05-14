@@ -12,8 +12,8 @@ export default async function QuienSoy() {
 
           <div className="order-2 lg:order-1 relative bg-zinc-50 dark:bg-zinc-900/30 p-4 sm:p-8 border border-zinc-100 dark:border-white/5">
             <img
-              src="/56.jpeg"
-              alt="Jorge Inda"
+              src="/perfil.png"
+              alt="Miguel Sánchez"
               className="w-full h-auto object-cover grayscale opacity-90 hover:grayscale-0 transition-all duration-700"
             />
           </div>
