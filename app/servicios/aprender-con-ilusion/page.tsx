@@ -1,7 +1,48 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
+
+export const metadata: Metadata = {
+  title: 'Aprender con Ilusión',
+  description: 'El aprendizaje continuo es tu mayor superpoder. Tu tarjeta de visita es tu capacidad de aprender, no tu título pasado. Cambiamos el miedo a equivocarse por una curiosidad insaciable.',
+  alternates: { canonical: 'https://darwinindigital.com/servicios/aprender-con-ilusion' },
+  openGraph: {
+    title: 'Aprender con Ilusión | Darwin in Digital',
+    description: 'El aprendizaje continuo es tu mayor superpoder. Empoderamos tu capacidad de aprender, no tu título pasado.',
+    url: 'https://darwinindigital.com/servicios/aprender-con-ilusion',
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://darwinindigital.com/servicios/aprender-con-ilusion#service',
+      name: 'Aprender con Ilusión',
+      description: 'Formación experiencial que activa el aprendizaje desde la motivación intrínseca. Cambiamos el miedo a equivocarse por una curiosidad insaciable.',
+      provider: { '@id': 'https://darwinindigital.com/#organization' },
+      url: 'https://darwinindigital.com/servicios/aprender-con-ilusion',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: '¿Por qué pesan más las habilidades que los títulos?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Porque en un mundo volátil, lo que sabes hacer hoy caduca mañana. Lo que nunca caduca es tu capacidad de aprender cosas nuevas con agilidad.' },
+        },
+        {
+          '@type': 'Question',
+          name: '¿Cómo perder el miedo a la tecnología?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Cambiando el «tengo que» por el «puedo». El aprendizaje en un entorno de seguridad psicológica es la clave para la adopción real.' },
+        },
+      ],
+    },
+  ],
+}
 
 export default async function AprenderIlusion() {
   const t = await getT()
@@ -9,6 +50,7 @@ export default async function AprenderIlusion() {
 
   return (
     <main className="relative min-h-screen bg-zinc-50 dark:bg-[#050505] pt-32 pb-24 selection:bg-darwin-neonGreen selection:text-black transition-colors duration-300">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="container mx-auto px-6">
 
         <FadeIn direction="left" className="max-w-3xl mb-20">

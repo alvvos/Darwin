@@ -1,7 +1,48 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
+
+export const metadata: Metadata = {
+  title: 'Decisiones Audaces con Claridad',
+  description: 'Filtramos el caos para que solo llegue a ti lo que tiene valor real. Transforma datos en visión clara. Confía en tu instinto, respaldado por la tecnología.',
+  alternates: { canonical: 'https://darwinindigital.com/servicios/decisiones-audaces-con-claridad' },
+  openGraph: {
+    title: 'Decisiones Audaces con Claridad | Darwin in Digital',
+    description: 'Filtramos el caos para que solo llegue a ti lo que tiene valor real. Toma decisiones audaces con la mente despejada.',
+    url: 'https://darwinindigital.com/servicios/decisiones-audaces-con-claridad',
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://darwinindigital.com/servicios/decisiones-audaces-con-claridad#service',
+      name: 'Decisiones Audaces con Claridad',
+      description: 'Marco para tomar decisiones con confianza en entornos de incertidumbre. Filtramos el caos para que solo llegue lo que tiene valor real.',
+      provider: { '@id': 'https://darwinindigital.com/#organization' },
+      url: 'https://darwinindigital.com/servicios/decisiones-audaces-con-claridad',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: '¿Cómo afecta el exceso de información?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Crea parálisis. Una mente saturada no puede ser creativa. La tecnología debe actuar como un filtro, no como un embudo sin fin.' },
+        },
+        {
+          '@type': 'Question',
+          name: '¿Cómo ayuda la tecnología a decidir mejor?',
+          acceptedAnswer: { '@type': 'Answer', text: 'No dándote más datos, sino dándote los datos correctos para que tú apliques tu juicio y empatía, algo que ninguna IA posee.' },
+        },
+      ],
+    },
+  ],
+}
 
 export default async function DecisionesAudaces() {
   const t = await getT()
@@ -9,6 +50,7 @@ export default async function DecisionesAudaces() {
 
   return (
     <main className="relative min-h-screen bg-zinc-50 dark:bg-[#050505] pt-32 pb-24 selection:bg-darwin-neonGreen selection:text-black transition-colors duration-300">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="container mx-auto px-6">
 
         <FadeIn direction="left" className="max-w-3xl mb-20">

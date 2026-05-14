@@ -1,7 +1,48 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
+
+export const metadata: Metadata = {
+  title: 'El Poder de lo Sencillo',
+  description: 'De la parálisis por análisis a la acción transformadora. Pasos firmes hacia tu gran evolución. La innovación es un hábito diario, accesible y gratificante, no solo para genios.',
+  alternates: { canonical: 'https://darwinindigital.com/servicios/el-poder-de-lo-sencillo' },
+  openGraph: {
+    title: 'El Poder de lo Sencillo | Darwin in Digital',
+    description: 'De la parálisis por análisis a la acción transformadora. Pasos firmes hacia tu gran evolución.',
+    url: 'https://darwinindigital.com/servicios/el-poder-de-lo-sencillo',
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://darwinindigital.com/servicios/el-poder-de-lo-sencillo#service',
+      name: 'El Poder de lo Sencillo',
+      description: 'De la parálisis por análisis a la acción transformadora. Pasos firmes hacia tu gran evolución.',
+      provider: { '@id': 'https://darwinindigital.com/#organization' },
+      url: 'https://darwinindigital.com/servicios/el-poder-de-lo-sencillo',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: '¿Qué es la innovación sencilla?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Es aplicar cambios prácticos hoy mismo que, sumados, generan un interés compuesto en tu evolución profesional.' },
+        },
+        {
+          '@type': 'Question',
+          name: '¿Por qué la acción vence a la planificación?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Porque la planificación excesiva es una forma de miedo. La acción, por pequeña que sea, genera datos reales y confianza inmediata.' },
+        },
+      ],
+    },
+  ],
+}
 
 export default async function PoderSencillo() {
   const t = await getT()
@@ -9,6 +50,7 @@ export default async function PoderSencillo() {
 
   return (
     <main className="relative min-h-screen bg-zinc-50 dark:bg-[#050505] pt-32 pb-24 selection:bg-darwin-neonGreen selection:text-black transition-colors duration-300">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="container mx-auto px-6">
 
         <FadeIn direction="left" className="max-w-3xl mb-20">

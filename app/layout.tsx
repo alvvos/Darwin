@@ -17,8 +17,58 @@ const fontMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Darwin in digital | Adaptación y disrupción tecnológica",
-  description: "El futuro no es la tecnología. El futuro eres tú.",
+  metadataBase: new URL('https://darwinindigital.com'),
+  title: {
+    template: '%s | Darwin in Digital',
+    default: 'Darwin in Digital | Adaptación y disrupción tecnológica',
+  },
+  description: 'Humanizamos la tecnología y capacitamos a los equipos para adoptar un rol evolutivo ante los avances digitales. El futuro no es la tecnología. El futuro eres tú.',
+  openGraph: {
+    type: 'website',
+    locale: 'es_ES',
+    url: 'https://darwinindigital.com',
+    siteName: 'Darwin in Digital',
+    title: 'Darwin in Digital | Adaptación y disrupción tecnológica',
+    description: 'Humanizamos la tecnología y capacitamos a los equipos para adoptar un rol evolutivo ante los avances digitales.',
+    images: [{ url: '/9.jpg', width: 1200, height: 800, alt: 'Darwin in Digital' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Darwin in Digital | Adaptación y disrupción tecnológica',
+    description: 'Humanizamos la tecnología y capacitamos a los equipos para adoptar un rol evolutivo ante los avances digitales.',
+    images: ['/9.jpg'],
+  },
+  robots: { index: true, follow: true },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://darwinindigital.com/#organization',
+      name: 'Darwin in Digital',
+      url: 'https://darwinindigital.com',
+      email: 'miguel@darwinindigital.com',
+      telephone: '+34629317055',
+      contactPoint: {
+        '@type': 'ContactPoint',
+        email: 'miguel@darwinindigital.com',
+        telephone: '+34629317055',
+        contactType: 'customer service',
+        availableLanguage: ['Spanish', 'English'],
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://darwinindigital.com/#website',
+      url: 'https://darwinindigital.com',
+      name: 'Darwin in Digital',
+      description: 'Humanizamos la tecnología y capacitamos a los equipos para adoptar un rol evolutivo ante los avances digitales.',
+      publisher: { '@id': 'https://darwinindigital.com/#organization' },
+      inLanguage: 'es',
+    },
+  ],
 };
 
 export default async function RootLayout({
@@ -30,6 +80,10 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased flex flex-col min-h-screen bg-zinc-50 text-zinc-900 dark:bg-[#050505] dark:text-white transition-colors duration-300`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

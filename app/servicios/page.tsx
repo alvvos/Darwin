@@ -1,6 +1,18 @@
+import type { Metadata } from 'next'
 import { ParallaxBand } from '@/components/parallax-band'
 import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
+
+export const metadata: Metadata = {
+  title: 'Soluciones y Servicios',
+  description: 'Diseñamos el puente hacia tu próximo nivel. Identidad y estrategia, experiencias útiles, conexión y diálogo, acompañamiento de equipo. Resultados tangibles, sin siglas complejas.',
+  alternates: { canonical: 'https://darwinindigital.com/servicios' },
+  openGraph: {
+    title: 'Soluciones y Servicios | Darwin in Digital',
+    description: 'Diseñamos el puente hacia tu próximo nivel. Resultados tangibles que tu equipo y tus clientes puedan sentir.',
+    url: 'https://darwinindigital.com/servicios',
+  },
+}
 
 export default async function Servicios() {
   const t = await getT()

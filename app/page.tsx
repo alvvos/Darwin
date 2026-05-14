@@ -1,6 +1,20 @@
+import type { Metadata } from 'next'
 import { HeroSection } from '@/components/hero-section'
 import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
+
+export const metadata: Metadata = {
+  title: {
+    absolute: 'Darwin in Digital | Adaptación y disrupción tecnológica',
+  },
+  description: 'Humanizamos la tecnología y capacitamos a los equipos para adoptar un rol evolutivo ante los avances digitales. El futuro no es la tecnología. El futuro eres tú.',
+  alternates: { canonical: 'https://darwinindigital.com' },
+  openGraph: {
+    title: 'Darwin in Digital | Adaptación y disrupción tecnológica',
+    description: 'Humanizamos la tecnología y capacitamos a los equipos para adoptar un rol evolutivo ante los avances digitales.',
+    url: 'https://darwinindigital.com',
+  },
+}
 
 export default async function Home() {
   const t = await getT()

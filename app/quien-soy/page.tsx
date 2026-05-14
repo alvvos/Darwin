@@ -1,4 +1,30 @@
+import type { Metadata } from 'next'
 import { getT } from '@/lib/content'
+
+export const metadata: Metadata = {
+  title: 'Miguel Sánchez — Quién Soy',
+  description: 'Soy Miguel Sánchez, más de 23 años conectando negocios y comportamiento humano. Mi propósito: ayudarte a que la próxima década no te suceda, sino que ocurra gracias a ti.',
+  alternates: { canonical: 'https://darwinindigital.com/quien-soy' },
+  openGraph: {
+    title: 'Miguel Sánchez — Quién Soy | Darwin in Digital',
+    description: 'Más de 23 años conectando negocios y comportamiento humano. Mi propósito: ayudarte a que la próxima década no te suceda, sino que ocurra gracias a ti.',
+    url: 'https://darwinindigital.com/quien-soy',
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': 'https://darwinindigital.com/quien-soy#person',
+  name: 'Miguel Sánchez',
+  jobTitle: 'Consultor de transformación digital',
+  description: 'Más de 23 años conectando negocios y comportamiento humano. Experto en transformación digital y liderazgo evolutivo.',
+  url: 'https://darwinindigital.com/quien-soy',
+  email: 'miguel@darwinindigital.com',
+  telephone: '+34629317055',
+  image: 'https://darwinindigital.com/perfil.png',
+  worksFor: { '@id': 'https://darwinindigital.com/#organization' },
+}
 
 export default async function QuienSoy() {
   const t = await getT()
@@ -6,6 +32,7 @@ export default async function QuienSoy() {
 
   return (
     <main className="relative min-h-screen bg-white dark:bg-[#050505] pt-32 pb-24 selection:bg-darwin-neonGreen selection:text-black transition-colors duration-300">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="container mx-auto px-6">
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">

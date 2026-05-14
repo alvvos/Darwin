@@ -1,7 +1,48 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
+
+export const metadata: Metadata = {
+  title: 'Tecnología para Tu Crecimiento',
+  description: 'La tecnología como trampolín hacia tu porqué. Usa la IA como tu aliada para recuperar tiempo, claridad mental y el espacio donde nacen las ideas que cambian las reglas del juego.',
+  alternates: { canonical: 'https://darwinindigital.com/servicios/tecnologia-para-tu-crecimiento' },
+  openGraph: {
+    title: 'Tecnología para Tu Crecimiento | Darwin in Digital',
+    description: 'La tecnología como motor de tu bienestar y mayor potencial. Libera tu tiempo para crear, liderar e inspirar.',
+    url: 'https://darwinindigital.com/servicios/tecnologia-para-tu-crecimiento',
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://darwinindigital.com/servicios/tecnologia-para-tu-crecimiento#service',
+      name: 'Tecnología para Tu Crecimiento',
+      description: 'La tecnología como motor de tu bienestar y mayor potencial. Libera tu tiempo para crear, liderar e inspirar.',
+      provider: { '@id': 'https://darwinindigital.com/#organization' },
+      url: 'https://darwinindigital.com/servicios/tecnologia-para-tu-crecimiento',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: '¿Cómo ayuda la tecnología a mi crecimiento?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Al asumir tareas monótonas, te regala «claridad mental», el activo más escaso de la era moderna, para que te enfoques en conectar e inspirar.' },
+        },
+        {
+          '@type': 'Question',
+          name: '¿Por qué es vital la ilusión?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Porque el miedo paraliza el aprendizaje. A veces el mayor cambio no es técnico, sino psicológico: ver la herramienta como un regalo, no como una amenaza.' },
+        },
+      ],
+    },
+  ],
+}
 
 export default async function TecnologiaCrecimiento() {
   const t = await getT()
@@ -9,6 +50,7 @@ export default async function TecnologiaCrecimiento() {
 
   return (
     <main className="relative min-h-screen bg-zinc-50 dark:bg-[#050505] pt-32 pb-24 selection:bg-darwin-neonGreen selection:text-black transition-colors duration-300">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="container mx-auto px-6">
 
         <FadeIn direction="left" className="max-w-3xl mb-20">

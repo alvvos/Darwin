@@ -1,7 +1,19 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
+
+export const metadata: Metadata = {
+  title: 'Metodología M.A.E.C.',
+  description: 'Un sistema operativo para la evolución humana. 6 pilares para que la transformación digital sea un proceso natural: sinergia, empatía cultural, estrategia desde las personas, activación ágil, inteligencia evolutiva y cimientos tecnológicos.',
+  alternates: { canonical: 'https://darwinindigital.com/como-lo-hacemos' },
+  openGraph: {
+    title: 'Metodología M.A.E.C. | Darwin in Digital',
+    description: 'Un sistema operativo para la evolución humana. 6 pilares para que la transformación digital sea un proceso natural, no un trauma.',
+    url: 'https://darwinindigital.com/como-lo-hacemos',
+  },
+}
 
 export default async function Metodologia() {
   const t = await getT()

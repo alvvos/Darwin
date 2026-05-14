@@ -1,7 +1,48 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
+
+export const metadata: Metadata = {
+  title: 'Autenticidad como Superpoder',
+  description: 'En un mar de algoritmos, tu vulnerabilidad, humor y ética son tus activos más escasos y magnéticos. La supervivencia del más auténtico. Amplifica tu verdad en el mundo digital.',
+  alternates: { canonical: 'https://darwinindigital.com/servicios/autenticidad-como-superpoder' },
+  openGraph: {
+    title: 'Autenticidad como Superpoder | Darwin in Digital',
+    description: 'Tu autenticidad es tu mayor ventaja en un mundo digital. La IA no puede clonar lo que eres.',
+    url: 'https://darwinindigital.com/servicios/autenticidad-como-superpoder',
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://darwinindigital.com/servicios/autenticidad-como-superpoder#service',
+      name: 'Autenticidad como Superpoder',
+      description: 'Desarrollo del liderazgo desde la identidad y los valores propios. Amplifica tu verdad en el entorno digital.',
+      provider: { '@id': 'https://darwinindigital.com/#organization' },
+      url: 'https://darwinindigital.com/servicios/autenticidad-como-superpoder',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: '¿Por qué la autenticidad es clave hoy?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Porque es lo único que la IA no puede clonar. La eficiencia se compra; la lealtad se gana siendo real.' },
+        },
+        {
+          '@type': 'Question',
+          name: '¿Cómo aplico la autenticidad en digital?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Siendo transparente, admitiendo fallos y manteniendo una coherencia total entre lo que dices y lo que haces.' },
+        },
+      ],
+    },
+  ],
+}
 
 export default async function AutenticidadSuperpoder() {
   const t = await getT()
@@ -9,6 +50,7 @@ export default async function AutenticidadSuperpoder() {
 
   return (
     <main className="relative min-h-screen bg-zinc-50 dark:bg-[#050505] pt-32 pb-24 selection:bg-darwin-neonGreen selection:text-black transition-colors duration-300">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="container mx-auto px-6">
 
         <FadeIn direction="left" className="max-w-3xl mb-20">

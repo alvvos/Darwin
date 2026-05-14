@@ -1,7 +1,19 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
+
+export const metadata: Metadata = {
+  title: 'Hablemos',
+  description: 'Menos formularios, más conversaciones. Un café de 15 minutos sin compromisos para escucharte. Escríbenos a miguel@darwinindigital.com o llama al 629 317 055.',
+  alternates: { canonical: 'https://darwinindigital.com/hablemos' },
+  openGraph: {
+    title: 'Hablemos | Darwin in Digital',
+    description: 'Menos formularios, más conversaciones. Un café de 15 minutos sin compromisos para escuchar tus retos.',
+    url: 'https://darwinindigital.com/hablemos',
+  },
+}
 
 export default async function Hablemos() {
   const t = await getT()

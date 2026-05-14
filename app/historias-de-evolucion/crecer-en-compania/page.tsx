@@ -1,7 +1,36 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
+
+export const metadata: Metadata = {
+  title: 'Crecer en Compañía',
+  description: 'Nadie alcanza la grandeza solo. La evolución es un deporte de equipo. Construimos ecosistemas de éxito donde el conocimiento fluye y los éxitos se celebran en conjunto.',
+  alternates: { canonical: 'https://darwinindigital.com/historias-de-evolucion/crecer-en-compania' },
+  openGraph: {
+    title: 'Crecer en Compañía | Darwin in Digital',
+    description: 'Construimos ecosistemas de éxito donde el conocimiento fluye y los éxitos se celebran en conjunto. La evolución es un deporte de equipo.',
+    url: 'https://darwinindigital.com/historias-de-evolucion/crecer-en-compania',
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Por qué es vital una red de apoyo digital?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Porque la curva de aprendizaje es demasiado empinada para una sola persona. Juntos, el conocimiento se democratiza y el miedo se diluye.' },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cómo empezar a colaborar?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Comparte lo que sabes hoy. La reciprocidad es la moneda más valiosa de la nueva economía digital.' },
+    },
+  ],
+}
 
 export default async function CrecerEnCompania() {
   const t = await getT()
@@ -9,6 +38,7 @@ export default async function CrecerEnCompania() {
 
   return (
     <main className="relative min-h-screen bg-zinc-50 dark:bg-[#050505] pt-32 pb-24 selection:bg-darwin-neonGreen selection:text-black transition-colors duration-300">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="container mx-auto px-6">
 
         <FadeIn direction="left" className="max-w-3xl mb-20">
