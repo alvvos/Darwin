@@ -21,7 +21,9 @@
         "link_agendar": "Agendar café",
         "link_linkedin": "Linkedin",
         "link_email": "Email",
+        "legal": "Legal",
         "copyright": "© 2026 Darwin in Digital. Todos los derechos reservados.",
+        "nif": "NIF: —",
         "aviso_legal": "Aviso legal",
         "privacidad": "Política de privacidad",
         "cookies": "Política de cookies"
@@ -34,7 +36,7 @@
           "h1_line3": "El futuro eres tú",
           "h1_line4": "(y tu equipo).",
           "p1": "El darwinismo digital es implacable: la tecnología evoluciona más rápido que nuestra capacidad de adaptación. Pero aquí no venimos a hablar de software, sino de supervivencia y relevancia humana.",
-          "p2": "En Darwinin Digital, no instalamos programas; instalamos mentalidades. Somos facilitadores que ayudamos a las organizaciones a cruzar el puente entre la «inercia activa» y la agilidad real.",
+          "p2": "En Darwin in Digital, no instalamos programas; instalamos mentalidades. Somos facilitadores que ayudamos a las organizaciones a cruzar el puente entre la «inercia activa» y la agilidad real.",
           "cta_primary": "Agendar café de 15 min",
           "cta_secondary": "Descubrir metodología m.a.e.c."
         },
@@ -80,7 +82,7 @@
       },
       "metodologia": {
         "label": "Nuestra hoja de ruta",
-        "h1_main": "M.a.e.c.: un sistema operativo para la",
+        "h1_main": "M.a.e.c. (Metodología de Alineación y Evolución Conjunta): un sistema operativo para la",
         "h1_accent": "evolución humana.",
         "intro": "Para que el cambio sea seguro y duradero, aplicamos la metodología de alineación y evolución conjunta. Es nuestra hoja de ruta para que la transformación no sea un trauma, sino un proceso natural.",
         "pillars_heading": "Los 6 pilares de Darwin",
@@ -119,7 +121,7 @@
         "bullet2_text": "al terminar, tendrás al menos dos consejos prácticos e inmediatos para aplicar en tu negocio hoy mismo.",
         "quote": "«La mejor tecnología del mundo no puede reemplazar una conversación honesta sobre lo que realmente está fallando.»",
         "contact_label": "Escríbenos directamente",
-        "gmail_label": "Gmail",
+        "gmail_label": "Email",
         "phone_label": "Teléfono",
         "response_note": "Respondemos en menos de 24 horas. Sin filtros, sin asistentes. Directamente Miguel."
       },
@@ -269,7 +271,9 @@
         "link_agendar": "Book a coffee",
         "link_linkedin": "Linkedin",
         "link_email": "Email",
+        "legal": "Legal",
         "copyright": "© 2026 Darwin in Digital. All rights reserved.",
+        "nif": "NIF: —",
         "aviso_legal": "Legal notice",
         "privacidad": "Privacy policy",
         "cookies": "Cookie policy"
@@ -282,7 +286,7 @@
           "h1_line3": "The future is you",
           "h1_line4": "(and your team).",
           "p1": "Digital Darwinism is relentless: technology evolves faster than our capacity to adapt. But we're not here to talk about software — we're here to talk about survival and human relevance.",
-          "p2": "At Darwinin Digital, we don't install programs; we install mindsets. We're facilitators who help organizations cross the bridge between 'active inertia' and real agility.",
+          "p2": "At Darwin in Digital, we don't install programs; we install mindsets. We're facilitators who help organizations cross the bridge between 'active inertia' and real agility.",
           "cta_primary": "Book a 15-min coffee",
           "cta_secondary": "Discover the m.a.e.c. methodology"
         },
@@ -328,10 +332,10 @@
       },
       "metodologia": {
         "label": "Our roadmap",
-        "h1_main": "M.a.e.c.: an operating system for",
+        "h1_main": "M.a.e.c. (Methodology of Alignment and Joint Evolution): an operating system for",
         "h1_accent": "human evolution.",
         "intro": "For change to be safe and lasting, we apply the Methodology of Alignment and Joint Evolution. It's our roadmap so that transformation is not a trauma, but a natural process.",
-        "pillars_heading": "The 6 pillars of Darwinin",
+        "pillars_heading": "The 6 pillars of Darwin",
         "p1_num": "01",
         "p1_title": "Synergy and commitment",
         "p1_body": "We are not external; we are part of your team until the goal is achieved.",

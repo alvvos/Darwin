@@ -5,13 +5,13 @@ import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
 
 export const metadata: Metadata = {
-  title: 'Tecnología para Tu Crecimiento',
-  description: 'La tecnología como trampolín hacia tu porqué. Usa la IA como tu aliada para recuperar tiempo, claridad mental y el espacio donde nacen las ideas que cambian las reglas del juego.',
-  alternates: { canonical: 'https://darwinindigital.com/servicios/tecnologia-para-tu-crecimiento' },
+  title: 'Decisiones Audaces con Claridad',
+  description: 'Filtramos el caos para que solo llegue a ti lo que tiene valor real. Transforma datos en visión clara. Confía en tu instinto, respaldado por la tecnología.',
+  alternates: { canonical: 'https://darwinindigital.com/soluciones/decisiones-audaces-con-claridad' },
   openGraph: {
-    title: 'Tecnología para Tu Crecimiento | Darwin in Digital',
-    description: 'La tecnología como motor de tu bienestar y mayor potencial. Libera tu tiempo para crear, liderar e inspirar.',
-    url: 'https://darwinindigital.com/servicios/tecnologia-para-tu-crecimiento',
+    title: 'Decisiones Audaces con Claridad | Darwin in Digital',
+    description: 'Filtramos el caos para que solo llegue a ti lo que tiene valor real. Toma decisiones audaces con la mente despejada.',
+    url: 'https://darwinindigital.com/soluciones/decisiones-audaces-con-claridad',
   },
 }
 
@@ -20,33 +20,33 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://darwinindigital.com/servicios/tecnologia-para-tu-crecimiento#service',
-      name: 'Tecnología para Tu Crecimiento',
-      description: 'La tecnología como motor de tu bienestar y mayor potencial. Libera tu tiempo para crear, liderar e inspirar.',
+      '@id': 'https://darwinindigital.com/soluciones/decisiones-audaces-con-claridad#service',
+      name: 'Decisiones Audaces con Claridad',
+      description: 'Marco para tomar decisiones con confianza en entornos de incertidumbre. Filtramos el caos para que solo llegue lo que tiene valor real.',
       provider: { '@id': 'https://darwinindigital.com/#organization' },
-      url: 'https://darwinindigital.com/servicios/tecnologia-para-tu-crecimiento',
+      url: 'https://darwinindigital.com/soluciones/decisiones-audaces-con-claridad',
     },
     {
       '@type': 'FAQPage',
       mainEntity: [
         {
           '@type': 'Question',
-          name: '¿Cómo ayuda la tecnología a mi crecimiento?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Al asumir tareas monótonas, te regala «claridad mental», el activo más escaso de la era moderna, para que te enfoques en conectar e inspirar.' },
+          name: '¿Cómo afecta el exceso de información?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Crea parálisis. Una mente saturada no puede ser creativa. La tecnología debe actuar como un filtro, no como un embudo sin fin.' },
         },
         {
           '@type': 'Question',
-          name: '¿Por qué es vital la ilusión?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Porque el miedo paraliza el aprendizaje. A veces el mayor cambio no es técnico, sino psicológico: ver la herramienta como un regalo, no como una amenaza.' },
+          name: '¿Cómo ayuda la tecnología a decidir mejor?',
+          acceptedAnswer: { '@type': 'Answer', text: 'No dándote más datos, sino dándote los datos correctos para que tú apliques tu juicio y empatía, algo que ninguna IA posee.' },
         },
       ],
     },
   ],
 }
 
-export default async function TecnologiaCrecimiento() {
+export default async function DecisionesAudaces() {
   const t = await getT()
-  const c = t.tecnologia_crecimiento
+  const c = t.decisiones_audaces
 
   return (
     <main className="relative min-h-screen bg-zinc-50 dark:bg-[#050505] pt-32 pb-24 selection:bg-darwin-neonGreen selection:text-black transition-colors duration-300">

@@ -72,22 +72,7 @@ export function HeroSection({ content }: { content: T['home']['hero'] }) {
         <img
           src="/9.jpg"
           alt=""
-          className="w-full h-full object-cover opacity-95 dark:opacity-45"
-          style={{ objectPosition: '0% 35%' }}
-          draggable={false}
-        />
-      </div>
-
-      {/* ── Capa 1b: imagen Darwin — mobile (full-width, muy tenue) ── */}
-      <div
-        aria-hidden
-        className="absolute inset-0 pointer-events-none select-none sm:hidden"
-      >
-        <img
-          src="/55.jpg"
-          alt=""
-          className="w-full h-full object-cover opacity-15 dark:opacity-10"
-          style={{ objectPosition: 'center 30%' }}
+          className="w-full h-full object-cover opacity-95 dark:opacity-45 object-[center_30%] sm:object-[0%_35%]"
           draggable={false}
         />
       </div>

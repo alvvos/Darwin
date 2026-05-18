@@ -5,13 +5,13 @@ import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
 
 export const metadata: Metadata = {
-  title: 'Decisiones Audaces con Claridad',
-  description: 'Filtramos el caos para que solo llegue a ti lo que tiene valor real. Transforma datos en visión clara. Confía en tu instinto, respaldado por la tecnología.',
-  alternates: { canonical: 'https://darwinindigital.com/servicios/decisiones-audaces-con-claridad' },
+  title: 'El Poder de lo Sencillo',
+  description: 'De la parálisis por análisis a la acción transformadora. Pasos firmes hacia tu gran evolución. La innovación es un hábito diario, accesible y gratificante, no solo para genios.',
+  alternates: { canonical: 'https://darwinindigital.com/soluciones/el-poder-de-lo-sencillo' },
   openGraph: {
-    title: 'Decisiones Audaces con Claridad | Darwin in Digital',
-    description: 'Filtramos el caos para que solo llegue a ti lo que tiene valor real. Toma decisiones audaces con la mente despejada.',
-    url: 'https://darwinindigital.com/servicios/decisiones-audaces-con-claridad',
+    title: 'El Poder de lo Sencillo | Darwin in Digital',
+    description: 'De la parálisis por análisis a la acción transformadora. Pasos firmes hacia tu gran evolución.',
+    url: 'https://darwinindigital.com/soluciones/el-poder-de-lo-sencillo',
   },
 }
 
@@ -20,33 +20,33 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://darwinindigital.com/servicios/decisiones-audaces-con-claridad#service',
-      name: 'Decisiones Audaces con Claridad',
-      description: 'Marco para tomar decisiones con confianza en entornos de incertidumbre. Filtramos el caos para que solo llegue lo que tiene valor real.',
+      '@id': 'https://darwinindigital.com/soluciones/el-poder-de-lo-sencillo#service',
+      name: 'El Poder de lo Sencillo',
+      description: 'De la parálisis por análisis a la acción transformadora. Pasos firmes hacia tu gran evolución.',
       provider: { '@id': 'https://darwinindigital.com/#organization' },
-      url: 'https://darwinindigital.com/servicios/decisiones-audaces-con-claridad',
+      url: 'https://darwinindigital.com/soluciones/el-poder-de-lo-sencillo',
     },
     {
       '@type': 'FAQPage',
       mainEntity: [
         {
           '@type': 'Question',
-          name: '¿Cómo afecta el exceso de información?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Crea parálisis. Una mente saturada no puede ser creativa. La tecnología debe actuar como un filtro, no como un embudo sin fin.' },
+          name: '¿Qué es la innovación sencilla?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Es aplicar cambios prácticos hoy mismo que, sumados, generan un interés compuesto en tu evolución profesional.' },
         },
         {
           '@type': 'Question',
-          name: '¿Cómo ayuda la tecnología a decidir mejor?',
-          acceptedAnswer: { '@type': 'Answer', text: 'No dándote más datos, sino dándote los datos correctos para que tú apliques tu juicio y empatía, algo que ninguna IA posee.' },
+          name: '¿Por qué la acción vence a la planificación?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Porque la planificación excesiva es una forma de miedo. La acción, por pequeña que sea, genera datos reales y confianza inmediata.' },
         },
       ],
     },
   ],
 }
 
-export default async function DecisionesAudaces() {
+export default async function PoderSencillo() {
   const t = await getT()
-  const c = t.decisiones_audaces
+  const c = t.poder_sencillo
 
   return (
     <main className="relative min-h-screen bg-zinc-50 dark:bg-[#050505] pt-32 pb-24 selection:bg-darwin-neonGreen selection:text-black transition-colors duration-300">

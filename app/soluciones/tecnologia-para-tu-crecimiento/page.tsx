@@ -5,13 +5,13 @@ import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
 
 export const metadata: Metadata = {
-  title: 'El Poder de lo Sencillo',
-  description: 'De la parálisis por análisis a la acción transformadora. Pasos firmes hacia tu gran evolución. La innovación es un hábito diario, accesible y gratificante, no solo para genios.',
-  alternates: { canonical: 'https://darwinindigital.com/servicios/el-poder-de-lo-sencillo' },
+  title: 'Tecnología para Tu Crecimiento',
+  description: 'La tecnología como trampolín hacia tu porqué. Usa la IA como tu aliada para recuperar tiempo, claridad mental y el espacio donde nacen las ideas que cambian las reglas del juego.',
+  alternates: { canonical: 'https://darwinindigital.com/soluciones/tecnologia-para-tu-crecimiento' },
   openGraph: {
-    title: 'El Poder de lo Sencillo | Darwin in Digital',
-    description: 'De la parálisis por análisis a la acción transformadora. Pasos firmes hacia tu gran evolución.',
-    url: 'https://darwinindigital.com/servicios/el-poder-de-lo-sencillo',
+    title: 'Tecnología para Tu Crecimiento | Darwin in Digital',
+    description: 'La tecnología como motor de tu bienestar y mayor potencial. Libera tu tiempo para crear, liderar e inspirar.',
+    url: 'https://darwinindigital.com/soluciones/tecnologia-para-tu-crecimiento',
   },
 }
 
@@ -20,33 +20,33 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://darwinindigital.com/servicios/el-poder-de-lo-sencillo#service',
-      name: 'El Poder de lo Sencillo',
-      description: 'De la parálisis por análisis a la acción transformadora. Pasos firmes hacia tu gran evolución.',
+      '@id': 'https://darwinindigital.com/soluciones/tecnologia-para-tu-crecimiento#service',
+      name: 'Tecnología para Tu Crecimiento',
+      description: 'La tecnología como motor de tu bienestar y mayor potencial. Libera tu tiempo para crear, liderar e inspirar.',
       provider: { '@id': 'https://darwinindigital.com/#organization' },
-      url: 'https://darwinindigital.com/servicios/el-poder-de-lo-sencillo',
+      url: 'https://darwinindigital.com/soluciones/tecnologia-para-tu-crecimiento',
     },
     {
       '@type': 'FAQPage',
       mainEntity: [
         {
           '@type': 'Question',
-          name: '¿Qué es la innovación sencilla?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Es aplicar cambios prácticos hoy mismo que, sumados, generan un interés compuesto en tu evolución profesional.' },
+          name: '¿Cómo ayuda la tecnología a mi crecimiento?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Al asumir tareas monótonas, te regala «claridad mental», el activo más escaso de la era moderna, para que te enfoques en conectar e inspirar.' },
         },
         {
           '@type': 'Question',
-          name: '¿Por qué la acción vence a la planificación?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Porque la planificación excesiva es una forma de miedo. La acción, por pequeña que sea, genera datos reales y confianza inmediata.' },
+          name: '¿Por qué es vital la ilusión?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Porque el miedo paraliza el aprendizaje. A veces el mayor cambio no es técnico, sino psicológico: ver la herramienta como un regalo, no como una amenaza.' },
         },
       ],
     },
   ],
 }
 
-export default async function PoderSencillo() {
+export default async function TecnologiaCrecimiento() {
   const t = await getT()
-  const c = t.poder_sencillo
+  const c = t.tecnologia_crecimiento
 
   return (
     <main className="relative min-h-screen bg-zinc-50 dark:bg-[#050505] pt-32 pb-24 selection:bg-darwin-neonGreen selection:text-black transition-colors duration-300">

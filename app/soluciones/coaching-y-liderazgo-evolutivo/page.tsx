@@ -7,11 +7,11 @@ import { getT } from '@/lib/content'
 export const metadata: Metadata = {
   title: 'Coaching y Liderazgo Evolutivo',
   description: 'Acompañamiento uno a uno para despertar tu claridad y liderar con confianza. Convicción interior, acción constante y la filosofía de dar como motor del liderazgo auténtico.',
-  alternates: { canonical: 'https://darwinindigital.com/servicios/coaching-y-liderazgo-evolutivo' },
+  alternates: { canonical: 'https://darwinindigital.com/soluciones/coaching-y-liderazgo-evolutivo' },
   openGraph: {
     title: 'Coaching y Liderazgo Evolutivo | Darwin in Digital',
     description: 'Acompañamiento uno a uno para despertar tu claridad y liderar con confianza. Sin plantillas genéricas, sin discursos vacíos.',
-    url: 'https://darwinindigital.com/servicios/coaching-y-liderazgo-evolutivo',
+    url: 'https://darwinindigital.com/soluciones/coaching-y-liderazgo-evolutivo',
   },
 }
 
@@ -20,11 +20,11 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://darwinindigital.com/servicios/coaching-y-liderazgo-evolutivo#service',
+      '@id': 'https://darwinindigital.com/soluciones/coaching-y-liderazgo-evolutivo#service',
       name: 'Coaching y Liderazgo Evolutivo',
       description: 'Acompañamiento personalizado uno a uno para liderar con energía renovada. Convicción interior, acción constante y la filosofía de dar como motor del liderazgo.',
       provider: { '@id': 'https://darwinindigital.com/#organization' },
-      url: 'https://darwinindigital.com/servicios/coaching-y-liderazgo-evolutivo',
+      url: 'https://darwinindigital.com/soluciones/coaching-y-liderazgo-evolutivo',
     },
     {
       '@type': 'FAQPage',

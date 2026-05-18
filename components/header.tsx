@@ -1,24 +1,38 @@
+'use client'
+
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ChevronDown } from 'lucide-react'
 import { ThemeToggle } from './theme-toggle'
 import { LangToggle } from './lang-toggle'
 import { MobileNav } from './mobile-nav'
-import { getT, getLocale } from '@/lib/content'
+import type { Locale } from '@/lib/content'
+import raw from '@/content/content.json'
 
-export default async function Header() {
-  const [t, locale] = await Promise.all([getT(), getLocale()])
+type T = typeof raw.translations['es']
+
+export default function Header() {
+  const [locale, setLocale] = useState<Locale>('es')
+
+  useEffect(() => {
+    const match = document.cookie.split('; ').find(r => r.startsWith('locale='))
+    const val = match?.split('=')[1]
+    if (val === 'es' || val === 'en') setLocale(val as Locale)
+  }, [])
+
+  const t = (raw.translations as Record<string, T>)[locale]
   const nav = t.nav
 
   const primaryServices = [
-    { href: '/servicios/coaching-y-liderazgo-evolutivo', label: t.coaching_evolutivo.label },
+    { href: '/soluciones/coaching-y-liderazgo-evolutivo', label: t.coaching_evolutivo.label },
   ]
 
   const secondaryServices = [
-    { href: '/servicios/tecnologia-para-tu-crecimiento', label: t.tecnologia_crecimiento.label },
-    { href: '/servicios/el-poder-de-lo-sencillo',        label: t.poder_sencillo.label },
-    { href: '/servicios/aprender-con-ilusion',            label: t.aprender_ilusion.label },
-    { href: '/servicios/decisiones-audaces-con-claridad', label: t.decisiones_audaces.label },
-    { href: '/servicios/autenticidad-como-superpoder',    label: t.autenticidad_superpoder.label },
+    { href: '/soluciones/tecnologia-para-tu-crecimiento', label: t.tecnologia_crecimiento.label },
+    { href: '/soluciones/el-poder-de-lo-sencillo',        label: t.poder_sencillo.label },
+    { href: '/soluciones/aprender-con-ilusion',            label: t.aprender_ilusion.label },
+    { href: '/soluciones/decisiones-audaces-con-claridad', label: t.decisiones_audaces.label },
+    { href: '/soluciones/autenticidad-como-superpoder',    label: t.autenticidad_superpoder.label },
     { href: '/historias-de-evolucion/crecer-en-compania', label: t.historias_crecer.label },
   ]
 
@@ -41,7 +55,7 @@ export default async function Header() {
 
             {/* Soluciones con dropdown */}
             <div className="relative group">
-              <Link href="/servicios" className="text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-darwin-light transition-colors relative flex items-center gap-1">
+              <Link href="/soluciones" className="text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-darwin-light transition-colors relative flex items-center gap-1">
                 {nav.soluciones}
                 <ChevronDown className="w-3 h-3 transition-transform duration-200 group-hover:rotate-180" />
                 <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-darwin-neonGreen transition-all duration-300 group-hover:w-full" />
@@ -75,7 +89,7 @@ export default async function Header() {
 
           {/* ── Controls ── */}
           <div className="flex items-center gap-2 md:gap-4">
-            <LangToggle locale={locale} />
+            <LangToggle locale={locale} onSwitch={setLocale} />
             <ThemeToggle />
 
             <Link

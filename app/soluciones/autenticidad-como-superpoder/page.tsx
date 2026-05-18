@@ -5,13 +5,13 @@ import { FadeIn } from '@/components/fade-in'
 import { getT } from '@/lib/content'
 
 export const metadata: Metadata = {
-  title: 'Aprender con Ilusión',
-  description: 'El aprendizaje continuo es tu mayor superpoder. Tu tarjeta de visita es tu capacidad de aprender, no tu título pasado. Cambiamos el miedo a equivocarse por una curiosidad insaciable.',
-  alternates: { canonical: 'https://darwinindigital.com/servicios/aprender-con-ilusion' },
+  title: 'Autenticidad como Superpoder',
+  description: 'En un mar de algoritmos, tu vulnerabilidad, humor y ética son tus activos más escasos y magnéticos. La supervivencia del más auténtico. Amplifica tu verdad en el mundo digital.',
+  alternates: { canonical: 'https://darwinindigital.com/soluciones/autenticidad-como-superpoder' },
   openGraph: {
-    title: 'Aprender con Ilusión | Darwin in Digital',
-    description: 'El aprendizaje continuo es tu mayor superpoder. Empoderamos tu capacidad de aprender, no tu título pasado.',
-    url: 'https://darwinindigital.com/servicios/aprender-con-ilusion',
+    title: 'Autenticidad como Superpoder | Darwin in Digital',
+    description: 'Tu autenticidad es tu mayor ventaja en un mundo digital. La IA no puede clonar lo que eres.',
+    url: 'https://darwinindigital.com/soluciones/autenticidad-como-superpoder',
   },
 }
 
@@ -20,33 +20,33 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://darwinindigital.com/servicios/aprender-con-ilusion#service',
-      name: 'Aprender con Ilusión',
-      description: 'Formación experiencial que activa el aprendizaje desde la motivación intrínseca. Cambiamos el miedo a equivocarse por una curiosidad insaciable.',
+      '@id': 'https://darwinindigital.com/soluciones/autenticidad-como-superpoder#service',
+      name: 'Autenticidad como Superpoder',
+      description: 'Desarrollo del liderazgo desde la identidad y los valores propios. Amplifica tu verdad en el entorno digital.',
       provider: { '@id': 'https://darwinindigital.com/#organization' },
-      url: 'https://darwinindigital.com/servicios/aprender-con-ilusion',
+      url: 'https://darwinindigital.com/soluciones/autenticidad-como-superpoder',
     },
     {
       '@type': 'FAQPage',
       mainEntity: [
         {
           '@type': 'Question',
-          name: '¿Por qué pesan más las habilidades que los títulos?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Porque en un mundo volátil, lo que sabes hacer hoy caduca mañana. Lo que nunca caduca es tu capacidad de aprender cosas nuevas con agilidad.' },
+          name: '¿Por qué la autenticidad es clave hoy?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Porque es lo único que la IA no puede clonar. La eficiencia se compra; la lealtad se gana siendo real.' },
         },
         {
           '@type': 'Question',
-          name: '¿Cómo perder el miedo a la tecnología?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Cambiando el «tengo que» por el «puedo». El aprendizaje en un entorno de seguridad psicológica es la clave para la adopción real.' },
+          name: '¿Cómo aplico la autenticidad en digital?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Siendo transparente, admitiendo fallos y manteniendo una coherencia total entre lo que dices y lo que haces.' },
         },
       ],
     },
   ],
 }
 
-export default async function AprenderIlusion() {
+export default async function AutenticidadSuperpoder() {
   const t = await getT()
-  const c = t.aprender_ilusion
+  const c = t.autenticidad_superpoder
 
   return (
     <main className="relative min-h-screen bg-zinc-50 dark:bg-[#050505] pt-32 pb-24 selection:bg-darwin-neonGreen selection:text-black transition-colors duration-300">
@@ -56,9 +56,6 @@ export default async function AprenderIlusion() {
         <FadeIn direction="left" className="max-w-3xl mb-20">
           <p className="text-zinc-500 dark:text-zinc-400 font-sans text-xs tracking-[0.15em] mb-8">{c.label}</p>
           <h1 className="text-4xl md:text-6xl font-medium text-zinc-900 dark:text-white tracking-tight leading-[1.1] mb-6">{c.h1}</h1>
-          <blockquote className="border-l-2 border-darwin-orange pl-6 mb-6">
-            <p className="text-lg text-zinc-600 dark:text-zinc-400 font-light italic">{c.intro_quote}</p>
-          </blockquote>
           <p className="text-xl text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">{c.intro}</p>
         </FadeIn>
 
