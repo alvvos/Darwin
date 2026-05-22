@@ -83,12 +83,12 @@ export default async function Hablemos() {
                   <p className="text-xs font-mono tracking-widests text-zinc-400 mb-2 uppercase">{c.phone_label}</p>
                   <div className="flex items-center gap-4 p-5 border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 group-hover:border-darwin-orange transition-colors duration-300">
                     <div className="w-2 h-2 rounded-full bg-darwin-orange flex-shrink-0" />
-                    <a href="tel:+34629317055" className="text-zinc-900 dark:text-white font-medium tracking-wide hover:text-darwin-orange transition-colors">629 317 055</a>
+                    <a href="tel:+34629317055" className="text-zinc-900 dark:text-white font-medium tracking-wide hover:text-darwin-orange transition-colors">+34 629 317 055</a>
                   </div>
                 </div>
               </div>
 
-              <p className="mt-12 text-sm text-zinc-500 dark:text-zinc-400 font-light leading-relaxed">{c.response_note}</p>
+              <p className="mt-12 text-sm text-zinc-500 dark:text-zinc-300 font-light leading-relaxed">{c.response_note}</p>
             </div>
           </FadeIn>
 

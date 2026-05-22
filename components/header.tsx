@@ -1,26 +1,11 @@
-'use client'
-
-import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ChevronDown } from 'lucide-react'
 import { ThemeToggle } from './theme-toggle'
-import { LangToggle } from './lang-toggle'
 import { MobileNav } from './mobile-nav'
-import type { Locale } from '@/lib/content'
-import raw from '@/content/content.json'
+import { getT } from '@/lib/content'
 
-type T = typeof raw.translations['es']
-
-export default function Header() {
-  const [locale, setLocale] = useState<Locale>('es')
-
-  useEffect(() => {
-    const match = document.cookie.split('; ').find(r => r.startsWith('locale='))
-    const val = match?.split('=')[1]
-    if (val === 'es' || val === 'en') setLocale(val as Locale)
-  }, [])
-
-  const t = (raw.translations as Record<string, T>)[locale]
+export default async function Header() {
+  const t = await getT()
   const nav = t.nav
 
   const primaryServices = [
@@ -89,7 +74,6 @@ export default function Header() {
 
           {/* ── Controls ── */}
           <div className="flex items-center gap-2 md:gap-4">
-            <LangToggle locale={locale} onSwitch={setLocale} />
             <ThemeToggle />
 
             <Link
